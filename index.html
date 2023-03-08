@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Agent | Website</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="shortcut icon" href="/Image/Icon.png" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <navbar>
-        <img src="Asset/RevoULogo.png" />
-        <div class="main">
-          <a href="#hero">Home</a>
-          <a href="#package">Our Package</a>
-          <a href="#call-us">Call Us</a>
+    <header style="border-bottom: 1px solid gray">
+      <navbar class="container">
+        <div class="navbar">
+          <img class="logo" src="/Image/RevoU.svg" />
+          <div class="menu">
+            <a class="menu-item" href="#hero">Home</a>
+            <a class="menu-item" href="#package">Our Package</a>
+            <a class="menu-item" href="#call-us">Call Us</a>
+          </div>
         </div>
       </navbar>
     </header>
@@ -23,33 +27,235 @@
       <section id="hero">
         <div class="container">
           <div class="hero-title">
-            <h1>Your Trasted</h1>
-            <h6>Your Happnes</h6>
+            <h1>Portal perjalanan terpercaya menuju Isekai</h1>
+            <h6>Wujudkan mimpi anda ke Isekai</h6>
           </div>
         </div>
       </section>
-      <section id="abaut-contact">
-        <div class="about">
-          <img src="http://placekitten.com/500/500" alt="" />
+      <section id="about-contact">
+        <div class="container">
           <div class="about-contact">
-            <div class="content-caption">
-              <p>Liburan Yuuuuuuukk</p>
+            <div class="about">
+              <img class="about-img" src="/Image/Isekai.jpeg" alt="" />
+              <div class="about-content">
+                <div class="content-caption">
+                  <p>"Ayo wujudkan mimpi menuju Isekai bersama kami."</p>
+                </div>
+                <div class="content-person">
+                  <img src="/Image/Naruto-Uzumaki.jpeg" alt="" />
+                  <div class="person-info">
+                    <h6>Uzumaki Naruto</h6>
+                    <p>CEO</p>
+                  </div>
+                </div>
+              </div>
+              <hr class="border" />
+              <div class="about-information">
+                <h6 class="information-title">
+                  Beberapa contoh pengalaman yang bisa didapatkan dalam paket
+                  wisata isekai ini antara lain:
+                </h6>
+                <ul class="information-list">
+                  <li>
+                    <div class="list-number">1</div>
+                    <p class="list-paragraf">
+                      Menginap di rumah karakter utama: Peserta akan menginap di
+                      rumah yang menyerupai rumah karakter utama dalam anime
+                      isekai. Mereka juga akan diajak berkeliling ke
+                      tempat-tempat yang muncul dalam anime.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="list-number">2</div>
+                    <p class="list-paragraf">
+                      Mengalami kehidupan karakter utama: Peserta akan mengalami
+                      kehidupan seperti karakter utama dalam anime isekai,
+                      seperti mengambil pekerjaan, berbicara dengan penduduk
+                      setempat, dan menjelajahi tempat-tempat yang menarik.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="list-number">3</div>
+                    <p class="list-paragraf">
+                      Berpartisipasi dalam pertarungan: Peserta akan diajak
+                      berpartisipasi dalam pertarungan yang menyerupai
+                      pertarungan dalam anime isekai, seperti mengalahkan
+                      monster, mengumpulkan harta karun, dan sebagainya.
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="content-person">
-              <img src="http://placekitten.com/50/50" alt="" />
-              <div class="person-info">
-                <h6>John Wick</h6>
-                <p>CEO</p>
+            <div class="contact">
+              <div class="card">
+                <div class="card-title">
+                  <h4>Contact Us</h4>
+                  <p>Sales akan menghubungi</p>
+                </div>
+                <form class="form" action="">
+                  <div class="input">
+                    <div class="input-child">
+                      <label for="">Your Name</label>
+                    </div>
+                    <input
+                      class="input-border"
+                      type="text"
+                      name="name"
+                      placeholder="Masukan nama lengkap"
+                      style="width: auto; height: 40px"
+                    />
+                  </div>
+                  <div class="input">
+                    <div class="input-child">
+                      <label for="">Email</label>
+                    </div>
+                    <input
+                      class="input-border"
+                      type="text"
+                      name="name"
+                      placeholder="Example@gmail.com"
+                      style="width: auto; height: 40px"
+                    />
+                  </div>
+                  <div class="input">
+                    <div class="input-child">
+                      <label for="">Interested</label>
+                    </div>
+                    <select
+                      class="input-border-interested"
+                      name="Interested"
+                      id="Interested"
+                    >
+                      <option value="">Dunia Sword Art Online</option>
+                      <option value="">
+                        Dunia Re:Zero − Starting Life in Another World
+                      </option>
+                      <option value="">Dunia Konosuba</option>
+                      <option value="">Dunia No Game No Life</option>
+                      <option value="">Dunia Overlord</option>
+                      <option value="">
+                        Dunia That Time I Got Reincarnated as a Slime
+                      </option>
+                    </select>
+                  </div>
+                  <input class="submit" type="submit" value="SEND" />
+                </form>
               </div>
             </div>
           </div>
-          <hr />
-          <div class="about-information"></div>
         </div>
-        <div class="contact"></div>
+      </section>
+      <!--- our package --->
+      <section id="package">
+        <div class="page-separator">
+          <h1>Our Package</h1>
+        </div>
+
+        <div class="our-package">
+          <div class="package">
+            <img src="/Image/Icon.png" alt="" />
+            <div class="person-info">
+              <h6>Dunia Sword Art Online</h6>
+              <p>
+                di mana para pemain terperangkap dalam game VRMMORPG yang penuh
+                dengan monster, dungeon, dan desa.
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <img src="/Image/Icon.png" alt="" />
+            <div class="person-info">
+              <h6>Dunia Re:Zero − Starting Life in Another World</h6>
+              <p>
+                di mana karakter utama Subaru Natsuki terbawa ke dunia
+                alternatif yang penuh dengan sihir, monster, dan perang.
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <img src="/Image/Icon.png" alt="" />
+            <div class="person-info">
+              <h6>Dunia Konosuba</h6>
+              <p>
+                God's Blessing on This Wonderful World!, di mana karakter utama
+                Kazuma Sato terperangkap di dunia fantasi yang penuh dengan
+                dewa, setan, dan monster.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border" />
+        <div class="our-package">
+          <div class="package">
+            <img src="/Image/Icon.png" alt="" />
+            <div class="person-info">
+              <h6>Dunia No Game No Life</h6>
+              <p>
+                di mana karakter utama Sora dan Shiro memasuki dunia fantasi di
+                mana semua konflik dipecahkan melalui game.
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <img src="/Image/Icon.png" alt="" />
+            <div class="person-info">
+              <h6>Dunia Overlord</h6>
+              <p>
+                di mana karakter utama Momonga terjebak dalam game MMORPG dan
+                terbangun di dunia fantasi yang penuh dengan makhluk mitos dan
+                dunia bawah tanah.
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <img src="/Image/Icon.png" alt="" />
+            <div class="person-info">
+              <h6>Dunia That Time I Got Reincarnated as a Slime</h6>
+              <p>
+                di mana karakter utama Satoru Mikami bereinkarnasi sebagai
+                monster slime di dunia fantasi yang penuh dengan ras-ras dan
+                kekuatan sihir yang berbeda.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- footer -->
-    <footer></footer>
+    <footer style="border-bottom: 1px solid gray"></footer>
+    <section id="call-us">
+      <div class="call-us">
+        <div class="call-title">
+          <h1>Daftar segera perjalanan menuju Isekai</h1>
+          <h6>
+            <p>
+              Kami akan mengantarkan anda menuju tempat yang Anda impikan dan
+            </p>
+            <p>kalian akan mendapat pengalaman yang menyengkan bersama kami</p>
+          </h6>
+          <!---<button class="uji-button" type="submit">
+            <span></span>DAFTAR SEKARANG
+          </button>-->
+          <button class="uji-button" type="button">
+            <span></span>DAFTAR SEKARANG
+          </button>
+        </div>
+      </div>
+      <footer style="border-bottom: 1px solid gray"></footer>
+      <div class="footer">
+        <img src="/Image/RevoU.svg" alt="" />
+        <div class="copyright">
+          <style>
+            a {
+              text-decoration: none;
+            }
+          </style>
+          <a class="footer-item" href="#termsofservice">Terms of Service</a> |
+          <a class="footer-item" href="#privacypolicy">Privacy Policy</a>
+        </div>
+        <p>©2023 RevoU</p>
+      </div>
+    </section>
   </body>
 </html>
