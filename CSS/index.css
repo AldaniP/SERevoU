@@ -202,6 +202,15 @@ header {
   opacity: 50%;
 }
 
+@media only screen and (max-width: 600px) {
+  .about-contact {
+    flex-direction: column;
+  }
+  .contact {
+    display: flex;
+    flex-direction: initial;
+  }
+}
 .about-contact {
   display: flex;
   gap: 40px;
@@ -211,6 +220,7 @@ header {
 .about-img {
   height: 100%;
   width: 400px;
+  border-radius: 10px;
 }
 
 .content-caption > p {
@@ -396,7 +406,7 @@ header {
   background: white;
   padding-left: 10px;
 }
-.input-border-interested {
+.input-interested {
   border-radius: 25px;
   border: 1px solid black;
   background: white;
